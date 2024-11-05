@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 a {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+.headerImage img {
+    width: 100%; /* Esto asegura que la imagen ocupe el ancho completo de la pantalla */
+    height: auto;
+    margin-top: 100px;
+}
+
+.leadTitle h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #222;
+}
+
+.wrapper {
+    max-width: 1200px; /* Máximo ancho para pantallas grandes */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.releases iframe {
+    width: 100%;
+    height: 380px;
+    border-radius: 12px;
+}
+
+.about {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about h4 {
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
