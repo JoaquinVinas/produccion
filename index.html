@@ -11,49 +11,16 @@
         <link rel="shortcut icon" href="favicon.ico">
 
         <style>
-            /* Estilos para el carrusel */
-            .carousel {
+            /* Imagen fija en el centro */
+            .single-image {
                 max-width: 800px;
-                margin: 0 auto;
-                position: relative;
+                margin: 20px auto;
+                text-align: center;
             }
-            .carousel img {
+            .single-image img {
                 width: 100%;
                 height: auto;
-                display: none;
-            }
-            .carousel img.active {
-                display: block;
-            }
-
-            /* Cambio de color y posición de la sección contacto y redes */
-            .about {
-                display: flex;
-                justify-content: space-between;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                padding: 20px;
-                background-color: black; /* Fondo negro para que se vea */
-            }
-            .email a {
-                color: white;
-                font-size: 18px;
-                text-decoration: none;
-            }
-            .contact {
-                position: relative;
-                left: 10px;
-            }
-            .links {
-                position: relative;
-                right: 10px;
-            }
-
-            /* Eliminar espacios no deseados en el encabezado */
-            .header .nav-button.left, .header .nav-button.right {
-                display: none;
+                border-radius: 10px; /* Redondear bordes opcional */
             }
         </style>
     </head>
@@ -70,12 +37,9 @@
             </div>
         </header>
 
-        <!-- Carrusel de imágenes -->
-        <div class="carousel">
-            <img src="portfolio1.jpg" alt="Imagen 1" class="active">
-            <img src="portfolio2.png" alt="Imagen 2">
-            <img src="portfolio3.jpg" alt="Imagen 3">
-            <img src="portfolio4.jpg" alt="Imagen 4">
+        <!-- Imagen fija -->
+        <div class="single-image">
+            <img src="portfolio1.jpg" alt="Imagen principal">
         </div>
         
         <div class="leadTitle">
@@ -115,18 +79,5 @@
         <footer class="footer">
             <p class="copyright">&copy; 2024 JOAQUÍN S VIÑAS</p>
         </footer>
-
-        <script>
-            // Script para el carrusel de imágenes
-            let index = 0;
-            const images = document.querySelectorAll('.carousel img');
-            setInterval(() => {
-                images[index].classList.remove('active');
-                index = (index + 1) % images.length;
-                images[index].classList.add('active');
-            }, 4000); // Cambiar cada 4 segundos
-        </script>
-
-        <script src="js/main.js"></script>
     </body>
 </html>
